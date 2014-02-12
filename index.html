@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
-
-<link rel="stylesheet" href="css/main.css">
 <head>
+	<title>Conlin Durbin</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script>
+		var titles = [
+			"Conlin Durbin is a developer.",
+			"Conlin Durbin is a designer.",
+			"Conlin Durbin is a student.",
+			"Conlin Durbin likes Javascript.",
+			"Conlin Durbin plays video games"
+		]; 
+		setInterval(function() {
+			var index = Math.random() * (titles.length);
+			window.document.title = titles[index];
+		}, 5000);
+	</script>
 </head>
 <body>
 	<section class="top">
@@ -50,7 +63,7 @@
 	
 	<section class="contact">
 		<h2>Get in touch:</h2>
-		<h3 class="email"><a href="mailto:me@conlindurb.in">conlin[at]frosty.co</a>
+		<h3 class="email"><a href="mailto:me@conlindurb.in">me[at]conlindurb.in</a>
 	</h3></section>
 </body>
 </html>
