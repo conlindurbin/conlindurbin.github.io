@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body {
+  background: #ecf0f1;
+  font-size:16px;
+  margin:0;
+  padding:2% 5%;
+  font-family:'Droid Sans Mono', Menlo;
+  font-weight:200;
+}
+
+.window {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+  position:absolute;
+  width:100%;
+  border-top: 25px solid #b4b4b4;
+  border-radius: 10px;
+  padding: 2%;
+  padding-bottom: 100px;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  backface-visibility: hidden;
+}
+
+.ContactForm {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background: #262728;
+  color: #f1f1f1;
+}
+
+.flipper {
+  width: 750px;
+  margin:0 auto;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+
+.flipper.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.sublime {
+  list-style: none;
+  background: #262728;
+  color: #f1f1f1;
+}
+.sublime li {
+  height: 25px;
+  line-height: 25px;
+}
+.sublime .tab {
+  margin-left: 2%;
+  list-style: none;
+}
+.sublime .red {
+  color: #EB5E5B;
+}
+.sublime .blue {
+  color: #5695BF;
+}
+.sublime .green {
+  color: #5AE897;
+}
+.sublime .yellow {
+  color: #F1D35C;
+}
+
+.btn {
+  display:block;
+  min-height:40px;
+  text-align:center;
+  color:#fff;
+  background:#5AE897;
+  border:none;
+  border-bottom:5px solid rgb(60, 170, 100);
+  font-family: Menlo;
+  margin:0 auto;
+  width:30%;
+  font-size:16px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+input, textarea {
+  font-family: Menlo;
+  background:none;
+  border:none;
+  border-bottom:2px solid #f1f1f1;
+  color:#f1f1f1;
+  outline:none;
+  height:40px;
+  font-size:16px;
+  margin:1% auto;
+  width:95%;
+}
+
+textarea {
+  min-height:200px;
+  background:#333;
+}
+
+label {
+  padding:1%;
+  display:block;
+}
