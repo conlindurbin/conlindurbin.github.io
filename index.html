@@ -40,14 +40,11 @@
 			</ul>
 			<li class="currentLine">}</li></ul>
 	</div>
-	<section class="work">
-		<h2>My Work</h2>
-		<img src="http://placehold.it/500x200/5695BF/ffffff&text=Work" class="workImg">
-		<img src="http://placehold.it/500x200/5695BF/ffffff&text=Is" class="workImg">
-		<img src="http://placehold.it/500x200/5695BF/ffffff&text=Coming" class="workImg">
-		<img src="http://placehold.it/500x200/5695BF/ffffff&text=Soon" class="workImg">
+	<section class='blog'>
+		{% for post in site.posts %}
+			<a href="{{ post.url }}">{{post.title }}</a><br />
+		{% endfor %}
 	</section>
-	
 	<section class="contact">
 		<h2>Get in touch:</h2>
 		<h3 class="email"><a href="mailto:me@conlindurb.in">me[at]conlindurb.in</a>
