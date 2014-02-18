@@ -41,14 +41,28 @@
 			<li class="currentLine">}</li></ul>
 	</div>
 	<section class='blog'>
+		<h2>Recent Posts</h2>
 		
-			<a href="/2014/02/12/test.html">Awwwww yisss. First post.</a><br />
+			<a href="/2014/02/15/my-first-post.html">Welcome to my new site!</a><br />
 		
 	</section>
 	<section class="contact">
 		<h2>Get in touch:</h2>
-		<h3 class="email"><a href="mailto:me@conlindurb.in">me[at]conlindurb.in</a>
-	</h3></section>
+		<h3 class="email"><a href="mailto:me@conlindurb.in">me[at]conlindurb.in</a></h3>
+		<div class='social'>
+			<i class='fa fa-github'></i>
+			<!-- <i class='fa fa-'></i> -->
+			<i class='fa fa-twitter'></i>
+		</div>
+	</section>
+	<section class='colophon'>
+		<h2>For those interested</h2>
+		<p>This site was built using Jekyll and Github Pages. For CSS, I use SASS with Bourbon.</p>
+		<small>Click to hide</small>
+	</section>
+	<footer>
+		<a href='javascript:void();' class='about'>About this site</a>
+	</footer>
 	<script>
 		var titles = [
 			"Conlin Durbin is a developer.",
@@ -58,10 +72,17 @@
 			"Conlin Durbin plays video games"
 		]; 
 		setInterval(function() {
-			var index = Math.floor(Math.random() * (titles.length+1));
+			var index = Math.floor(Math.random() * (titles.length));
 			console.log(index, titles[index]);
 			window.document.title = titles[index];
 		}, 5000);
+		var colophon = document.querySelector(".colophon");
+		document.querySelector(".about").addEventListener('click', function() {
+			colophon.style.top = "25%";
+		});
+		colophon.addEventListener('click', function() {
+			colophon.style.top = "-100%";
+		});
 	</script>
 </body>
 </html>

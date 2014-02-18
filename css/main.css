@@ -580,7 +580,7 @@ li {
 
 /* line 78, ../sass/main.scss */
 body {
-  background: whitesmoke;
+  background: #f2f2f2;
   color: #444444;
   font: 18px/1.25em "Droid Sans", sans-serif;
 }
@@ -761,4 +761,35 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation: triangle 5s infinite alternate;
   -moz-animation: triangle 5s infinite alternate;
   animation: triangle 5s infinite alternate;
+}
+
+/* line 235, ../sass/main.scss */
+a {
+  color: #414141;
+}
+/* line 237, ../sass/main.scss */
+a:hover {
+  color: #5a5a5a;
+}
+
+/* line 242, ../sass/main.scss */
+.blog {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 248, ../sass/main.scss */
+.colophon {
+  position: fixed;
+  top: -100%;
+  background: #fff;
+  border: 1px solid #c1c1c1;
+  padding: 2% 5%;
+  height: 300px;
+  width: 50%;
+  left: 25%;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
 }
