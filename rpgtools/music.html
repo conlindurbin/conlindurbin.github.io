@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+    <script src='http://www.youtube.com/iframe_api'></script>
+    <script src='app.js'></script>
+
+<style>
+body {
+    font-family:sans-serif;
+}
+
+label {
+    display:inline-block;
+    height:30px;
+    line-height:35px;
+    vertical-align:middle;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    display:inline-block;
+    vertical-align:middle;
+    width:30px;
+    margin:0 5px;
+    padding:0;
+    border:0;
+    height:30px;
+    background: #E82C0C;
+    outline:none;
+    box-shadow:0px 5px 0px #3B0600;
+    border-radius:2px;
+    float:left;
+}
+
+input[type='checkbox'].ready {
+    background:#0CE849;
+    box-shadow:0px 5px 0px #143B26;
+}
+
+div {
+    margin:20px 0;
+}
+
+input[type='checkbox']:checked {
+    margin-top:5px;
+    box-shadow:0px 0px 5px rgba(30,30,30,.75) inset;
+}
+
+.volume {
+    margin-left:50px;
+}
+
+.videos {
+    display:none;
+}
+</style>
+</head>
+<body>
+    <div><input type='checkbox' name='tavern' class='button' data-video='NmyeWTqhTSE'/> <label>Play Tavern Music</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+    <div><input type='checkbox' name='fight1' class='button' data-video='unbQHShOKGY'/> <label>Play Fight1 Music</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+    <div><input type='checkbox' name='fight2' class='button' data-video='N4BKRHPKE1I'/> <label>Play Fight2 Music</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+    <div><input type='checkbox' name='fight3' class='button' data-video='qi5EiCgQKuw'/> <label>Play Fight3 Music</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+    <div><input type='checkbox' name='fight4' class='button' data-video='z28lwyQjuTY'/> <label>Play Fight4 Music</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+    <div><input type='checkbox' name='forest' class='button' data-video='OdIJ2x3nxzQ'/> <label>Play Forest Sounds</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+    <div><input type='checkbox' name='water' class='button' data-video='_RPjndlY-sc'/> <label>Play Water Sounds</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+    <div><input type='checkbox' name='adventuring' class='button' data-video='Pq824AM9ZHQ'/> <label>Play Adventuring Music</label><br /><br /><label class='volume'>Volume</label><input type="range" onchange="changeVol(this)" class='volume'/></div>
+
+
+    <div class='videos'>
+        <div id="tavern"></div>
+        <div id="fight1"></div>
+        <div id="fight2"></div>
+        <div id="fight3"></div>
+        <div id="fight4"></div>
+        <div id="forest"></div>
+        <div id="water"></div>
+        <div id="adventuring"></div>
+    </div>
+</body>
+</html>
